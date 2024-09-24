@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <div class="logo">Yumster</div>
+        <ul>
+            <li><a href="#">Menu One</a></li>
+            <li><a href="#">Menu Two</a></li>
+            <li><a href="#">Menu Three</a></li>
+            <li><a href="#">Menu Four</a></li>
+            <li class="user-section">
+                <div class="user-icon">
+                    <img src="profile image .jpg" alt="User">
+                    <span class="user-text">User</span>
+                    <span class="down-arrow" onclick="showLoginPage()">&#9660;</span>
+                    <div class="login-page" id="loginPage">
+                        <div class="login-content">login</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover Restaurant <br> & Delicious Food</h1>
+                <img src="food image and lettuce dot.png" alt="Delicious Food">
+            </div>
+        </section>
+
+        <div class="red-bar"></div>
+
+        <section class="searching">
+            <div class="searching-container">
+                <input type="text" class="search-input" placeholder="Search restaurant, food">
+                <button class="search-button">GO</button>
+            </div>
+        </section>
+
+        <section class="location">
+            <div class="location-content">
+                <button class="location-button"> <i class="fas fa-map-marker-alt"></i> Hyderabad</button>
+            </div>
+        </section>
+
+        <section class="top-restaurants">
+            <div class="highlight-bar"></div>
+            <div class="restaurant-content">
+                <h2>some top restaurant for <br> dining out or in!</h2>
+                <p>Discover the best places to eat, whether you're dining out with friends and family or enjoying a cozy
+                    meal at home. From gourmet dishes to local favorites, our top picks offer a variety of cuisines to
+                    satisfy every craving. Order now and indulge in a delightful culinary experience!</p>
+                </div>
+        </section>
+
+
+        <section class="top-restaurants1">
+            <div class="restaurant-container">
+                <div class="restaurant">
+                    <img src="indian cusine .jpg" alt="Fire Water">
+                    <div class="cover">
+                       <h3>Curry Corner</h3>
+                        <p>Delight in the rich and vibrant spices of traditional Indian cuisine with every delicious
+                            mouthful.</p>
+                        <a href="#" class="book-now-button">Book Now <i class="fas fa-arrow-right"></i></a>
+                        <div class="location">
+                            <i class="fas fa-map-marker-alt"></i> Hyderabad
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant">
+                    <img src="pizza.jpg" alt="The Wonton">
+                    <div class="cover">
+                        <h3>Slice Heaven</h3>
+                        <p>Savor our gourmet pizza, made with the finest ingredients and expert care.</p>
+                        <a href="#" class="book-now-button">Book Now <i class="fas fa-arrow-right"></i></a>
+                        <div class="location">
+                            <i class="fas fa-map-marker-alt"></i> Hyderabad
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="see-more">
+                <span class="arrow">
+                    <img src="signature-Photoroom.png" alt="Arrow Image">
+                </span>
+                <span class="text">see more</span>
+                <span class="line"></span>
+            </a>
+
+
+            <img class="background-image" src="dotted page-Photoroom.png"  alt= "Background Image">
+            <img class="background-image1" src="dotted page-Photoroom.png" alt="Background Image">
+            <img class="background-image2" src="dotted page-Photoroom.png" alt="Background Image">
+        </section>
+
+        <!-- Advanced Booking Section -->
+        <div class="booking-section">
+            <div class="vegetable left"></div>
+            <div class="booking-container">
+                <div class="bar1"></div>
+                <h1>advanced booking</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="search restaurant">
+                    <button>GO</button>
+                </div>
+                <div class="booking-details">
+                    <div class="detail">
+                        <span>Date </span>
+                        <span class="detail-value">15-9-19</span>
+                        <span class="arrow1">&#9660;</span>
+                        <input type="date" class="hidden-input">
+                    </div>
+                    <div class="detail">
+                        <span>Time </span>
+                        <span class="detail-value">9:30 PM</span>
+                        <span class="arrow2">&#9660;</span>
+                        <input type="time" class="hidden-input">
+                    </div>
+                    <div class="detail">
+                        <span>Guests </span>
+                        <span class="detail-value">2 People</span>
+                        <span class="arrow3">&#9660;</span>
+                        <input type="number" class="hidden-input" min="1" max="10">
+                    </div>
+                </div>
+            </div>
+            <div class="vegetable right"></div>
+
+        </div>
+        
+        <section class="our-services">
+            <div class="highlight-bar1"></div>
+            <div class="services-content">
+                <h2>Our <br> Services</h2>
+                <p>Yumster is dedicated to providing delicious food and excellent service directly to customers'
+                    doorsteps or events, prioritizing convenience, quality, and customer satisfaction.</p>
+
+            </div>
+        </section>
+
+
+        <div class="features-section">
+            <div class="communication1">
+                <div class="communication1-icon">
+                    <img src="communication -Photoroom.png" alt="Advanced Table Booking">
+                </div>
+            </div>
+            <div class="communication1-1">
+                <div class="communication1-2-content">
+                    <h3>advanced table </h3>
+                    <h3 class="communication2-2-h3">booking</h3>
+                    <div class="highlight-bar2-1"></div>
+                    <p>Reserve in advance and skip the wait.</p>
+                </div>
+            </div>
+
+
+            <div class="dining2">
+                <div class="dining2-icon">
+                    <img src="dining -Photoroom.png" alt="Food for Free 24/7">
+                </div>
+            </div>
+            <div class="dining2-1">
+                <div class="dining2-2-content">
+                    <h3>Food for Free </h3>
+                    <div class="highlight-bar2-2"></div>
+                    <h3 class="dining2-2-h3">24/7</h3>
+                    <p>Get free meals 24 hours, 4 days a week.</p>
+                </div>
+            </div>
+            <div class="highlight-bar3-1"></div>
+            <div class="highlight-bar3-2"></div>
+
+
+            <div class="transportation3">
+                <div class="transportation3-icon">
+                    <img src="transportation-Photoroom.png" alt="Free Home Delivery">
+                </div>
+                <div class="transportation3-1">
+                    <div class="transportation3-2-content">
+                        <h3>free home delivery <br> at your door steps </h3>
+                        <p>Enjoy free home delivery on <br> all orders.</p>
+                        <div class="highlight-bar2-3"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="food-section">
+                <h2>Explore Our Foods</h2>
+                <p>Discover a delightful selection of our finest dishes, crafted with the freshest ingredients and
+                    bursting with flavor. From savory mains to sweet treats, there's something for everyone to enjoy.
+                </p>
+                <div class="food-cards">
+                    <div class="food-card1">
+                        <img src="Apple Pie .jpg" alt="Apple Pie">
+                        <div class="food-card-content">
+                            <h3>Apple Pie</h3>
+                            <span class="price">₹750</span>
+                            <p>Flaky pastry crust filled with tender apple slices, perfectly spiced with cinnamon.</p>
+                        </div>
+                    </div>
+                    <div class="food-card2">
+                        <img src="French Toast .jpg " alt=" French Toast ">
+                        <div class="food-card-content">
+                            <h3>French Toast</h3>
+                            <span class="price">₹350</span>
+                            <p>Golden, fluffy bread slices topped with powdered sugar and a drizzle of maple syrup.</p>
+                        </div>
+                    </div>
+                    <div class="food-card3">
+                        <img src="Chicken Wings .jpg" alt="Chicken Wings">
+                        <div class="food-card-content">
+                            <h3>Chicken Wings</h3>
+                            <span class="price">₹600</span>
+                            <p>Juicy, crispy wings marinated in a savory blend of spices.</p>
+                        </div>
+                    </div>
+                    <div class="food-card4">
+                        <img src="spaghetti.jpg" alt="Spaghetti">
+                        <div class="food-card-content">
+                            <h3>Spaghetti</h3>
+                            <span class="price">₹400</span>
+                            <p>Al dente pasta tossed in a rich tomato sauce, garnished with fresh basil.</p>
+                        </div>
+                    </div>
+                    <div class="food-card5">
+                        <img src="Sushi.jpg" alt="Sushi">
+                        <div class="food-card-content">
+                            <h3>Sushi</h3>
+                            <span class="price">₹950</span>
+                            <p>Delicate rolls of fresh seafood and vinegared rice, served with wasabi and soy sauce.</p>
+                        </div>
+                    </div>
+                    <div class="food-card6">
+                        <img src="Cake .jpg" alt="Brownie">
+                        <div class="food-card-content">
+                            <h3>Brownie</h3>
+                            <span class="price">₹400</span>
+                            <p>A rich, fudgy chocolate treat with a perfectly gooey center.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Download App Section -->
+            <section class="download-app">
+                <div class="download-app-content">
+                    <div class="highlight-bar1-2"></div>
+                    <h2>Download app for <br>Exciting Deals</h2>
+                    <p>Stay updated with the latest deals and offers.</p>
+                    <div class="app-buttons">
+                        <a href="#" class="btn btn-google" title="Google Play">
+                            <span class="btn-google-top-text">Get it on</span>
+                            <span class="btn-google-bottom-text">Google Play</span>
+                        </a>
+                        <a href="#" class="btn btn-apple" title="App Store">
+                            <span class="btn-apple-top-text">Download on the</span>
+                            <span class="btn-apple-bottom-text">App Store</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="phone-mockup">
+                        <img src="phone mockup -Photoroom.png" alt="Phone Mockup">
+                    </div>
+                </div>
+            </section>
+
+            <div class="container">
+
+                <div class="right">
+                    <h1>Get notified <br> about new amazing products</h1>
+                    <p>Stay in the loop with our gourmet product releases, delicious </p>
+                    <p class="notification-text">recipes, and exclusive culinary tips.</p>
+                    <div class="input-container">
+                        <input type="email" placeholder="Email">
+                        <button></button>
+                    </div>
+                    <div class="links">
+                        <a href="#">Product</a>
+                        <a href="#">Company</a>
+                        <a href="#">Learn More</a>
+                        <a href="#">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="left">
+                <img src="Leaf Image -Photoroom.png" alt="Plant">
+            </div>
+            <footer>
+                <div class="footer">
+                    <div class="row">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
+                    <p>&copy; 2024 Mockups</p>
+            </footer>
+
+
+
+            <script src="script.js"></script>
+</body>
+
+</html>
